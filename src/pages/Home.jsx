@@ -19,7 +19,7 @@ function App() {
     const [count, setCount] = useState(0)
 
     return (
-        <div className="min-h-screen bg-gray-100 w-full overflow-x-hidden">
+        <div className="min-h-screen bg-gray-100 w-full">
             <div className="bg-white shadow-lg">
                 <Navbar />
 

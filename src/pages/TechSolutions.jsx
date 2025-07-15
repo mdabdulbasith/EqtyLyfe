@@ -8,7 +8,7 @@ import techimg1overlay from '../assets/TechImg1overlay.png'
 
 const TechSolutions = () => {
     return (
-        <div className="min-h-screen bg-gray-100 w-full overflow-x-hidden">
+        <div className="min-h-screen bg-gray-100 w-full">
             <Navbar />
 
             {/* Card Container */}
