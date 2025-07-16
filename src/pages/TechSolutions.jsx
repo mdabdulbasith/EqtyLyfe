@@ -65,12 +65,12 @@ const TechSolutions = () => {
                         <img
                             src={techimg1}
                             alt="Main Visual"
-                            className="relative z-10 rounded-[8px] w-full h-auto"
+                            className="relative z-5 rounded-[8px] w-full h-auto"
                         />
                         <img
                             src={techimg1overlay}
                             alt="Overlay"
-                            className="absolute bottom-[20px] right-[-60px] sm:right-[-100px] md:right-[-140px] w-[160px] sm:w-[220px] md:w-[280px] max-w-[65vw] z-20 rounded-[30px]"
+                            className="absolute bottom-[20px] right-[-60px] sm:right-[-100px] md:right-[-140px] w-[160px] sm:w-[220px] md:w-[280px] max-w-[65vw] z-8 rounded-[30px]"
                         />
                     </div>
 
@@ -112,12 +112,12 @@ const TechSolutions = () => {
                             <img
                                 src={techimg2}
                                 alt="Main Visual"
-                                className="relative z-10 rounded-[8px] w-full h-auto"
+                                className="relative z-5 rounded-[8px] w-full h-auto"
                             />
                             <img
                                 src={techimg2overlay}
                                 alt="Overlay"
-                                className="absolute bottom-0 left-[-60px] sm:left-[-100px] md:left-[-130px] w-[160px] sm:w-[200px] md:w-[240px] max-w-[65vw] z-20 rounded-[30px]"
+                                className="absolute bottom-0 left-[-60px] sm:left-[-100px] md:left-[-130px] w-[160px] sm:w-[200px] md:w-[240px] max-w-[65vw] z-8 rounded-[30px]"
                             />
                         </div>
                     </div>
@@ -132,7 +132,7 @@ const TechSolutions = () => {
                         <img
                             src={techimg3}
                             alt="Main Visual"
-                            className="relative z-10 rounded-[8px] w-full h-auto"
+                            className="relative z-5 rounded-[8px] w-full h-auto"
                         />
                     </div>
 
