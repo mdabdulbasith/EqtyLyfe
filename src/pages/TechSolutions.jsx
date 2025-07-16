@@ -5,7 +5,7 @@ import image1 from '../assets/Tech_Solutions2.png';
 import image2 from '../assets/Tech_Solutions1.png';
 import techimg1 from '../assets/TechImg1.png';
 import techimg1overlay from '../assets/TechImg1overlay.png';
-import techimg2 from '../assets/Techimg2.png';
+import techimg2 from '../assets/TechImg2.png';
 import techimg2overlay from '../assets/TechImg2overlay.png';
 import techimg3 from '../assets/TechImg3.png';
 import { FaLink, FaCalculator } from 'react-icons/fa';
