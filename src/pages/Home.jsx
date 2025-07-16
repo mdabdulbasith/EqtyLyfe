@@ -25,10 +25,7 @@ function App() {
 
                 {/* Hero Section */}
                 <main>
-                    <section
-                        className="flex flex-col lg:flex-row w-full"
-                        style={{ minHeight: 'calc(100vh - 94px)' }}
-                    >
+                    <section className="flex flex-col lg:flex-row items-stretch w-full lg:min-h-[calc(100vh-94px)]">
                         {/* Left - Text Section */}
                         <div className="flex-1 bg-[#004B37] flex items-center py-10">
                             <div className="px-4 sm:px-10 md:px-[60px] lg:ml-[115px] text-white w-full">
@@ -65,6 +62,7 @@ function App() {
                         </div>
                     </section>
                 </main>
+
                 <section className="bg-[#F1F8E5] px-4 sm:px-6 md:px-10 py-10">
                     <div className="max-w-[1200px] mx-auto">
                         {/* White Card */}
