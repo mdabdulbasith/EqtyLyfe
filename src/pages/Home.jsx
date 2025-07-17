@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import '../App.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Chatbot from '../components/Chatbot'
 import Home from '../assets/Home.png'
 import Solution from '../assets/Solution.png'
 import Statistics from '../assets/Statistics.png'
@@ -22,6 +23,7 @@ function App() {
         <div className="min-h-screen bg-gray-100 w-full">
             <div className="bg-white shadow-lg">
                 <Navbar />
+                <Chatbot />
 
                 {/* Hero Section */}
                 <main>
