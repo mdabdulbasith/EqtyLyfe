@@ -8,7 +8,10 @@ import pdfWorker from 'pdfjs-dist/build/pdf.worker.min.mjs';
 
 // Use an external CDN for the worker
 
-pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.js',
+  import.meta.url
+).toString();
 
 
 const signatureFonts = [
