@@ -5,8 +5,6 @@ import html2canvas from "html2canvas";
 import { useDocuments } from "../DocumentsContext";
 import { Document, Page, pdfjs } from 'react-pdf';
 
-// Use an external CDN for the worker
-
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.js',
   import.meta.url
