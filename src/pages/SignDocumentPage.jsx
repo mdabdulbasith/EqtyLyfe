@@ -5,9 +5,12 @@ import html2canvas from "html2canvas";
 import { useDocuments } from "../DocumentsContext";
 import { Document, Page, pdfjs } from 'react-pdf';
 
-import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.min.js?url';
+// Use ?worker import for Vite + react-pdf v8
+import pdfWorker from 'pdfjs-dist/build/pdf.worker.min.js?worker';
 
-pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
+
+
 
 
 
