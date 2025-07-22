@@ -257,7 +257,10 @@ export default function SignDocumentPage() {
           className="relative mt-6 bg-gray-50 rounded-lg shadow-sm inline-block"
           style={{ width: pdfWidth }}
         >
-          <Document file={fileUrl}>
+          <Document
+            file={fileUrl}
+            onLoadError={(err) => console.error('Failed to load PDF file:', err)}
+          >
             <Page
               pageNumber={1}
               width={pdfWidth}
@@ -265,6 +268,7 @@ export default function SignDocumentPage() {
               renderAnnotationLayer={false}
             />
           </Document>
+
 
           <div
             ref={previewRef}
