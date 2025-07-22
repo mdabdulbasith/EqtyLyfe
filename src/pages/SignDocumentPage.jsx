@@ -4,8 +4,9 @@ import { PDFDocument } from "pdf-lib";
 import html2canvas from "html2canvas";
 import { useDocuments } from "../DocumentsContext";
 import { Document, Page, pdfjs } from 'react-pdf';
+import pdfWorker from 'pdfjs-dist/build/pdf.worker.min.mjs';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
 
 const signatureFonts = [
   "'Dancing Script', cursive",
