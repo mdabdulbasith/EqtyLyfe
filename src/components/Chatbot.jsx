@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { FaCommentDots, FaTimes, FaPaperPlane, FaExpand, FaCompress } from 'react-icons/fa';
-import logo from '../assets/Logo.png'; // Update with correct logo path
+import logo from '../assets/Logo.png'; 
 
 // Always use deployed backend URL
 const API_URL = 'https://eqtylyfe-be.onrender.com/api/chat';
+// const API_URL = 'http://localhost:5000/api/chat';
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);

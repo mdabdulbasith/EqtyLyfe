@@ -8,3 +8,14 @@
 .font-fustat {
   font-family: 'Fustat', sans-serif;
 }
+
+.pdf-container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.safe-signature * {
+  color: #000000 !important;
+  background: #ffffff !important;
+  border-color: #000000 !important;
+  box-shadow: none !important;
+}
