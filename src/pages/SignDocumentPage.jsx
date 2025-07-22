@@ -6,6 +6,7 @@ import { useDocuments } from "../DocumentsContext";
 import { Document, Page, pdfjs } from 'react-pdf';
 
 import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.min.js?url';
+
 pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
 
