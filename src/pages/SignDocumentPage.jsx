@@ -5,10 +5,9 @@ import html2canvas from "html2canvas";
 import { useDocuments } from "../DocumentsContext";
 import { Document, Page, pdfjs } from 'react-pdf';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.js',
-  import.meta.url
-).toString();
+import workerSrc from 'pdfjs-dist/build/pdf.worker.min.js';
+pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
+
 
 
 const signatureFonts = [
