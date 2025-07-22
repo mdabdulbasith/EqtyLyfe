@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { PDFDocument } from "pdf-lib";
-import { Document, Page, pdfjs } from "react-pdf";
 import html2canvas from "html2canvas";
 import { useDocuments } from "../DocumentsContext";
 
