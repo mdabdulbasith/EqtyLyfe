@@ -29,6 +29,7 @@ const Navbar = () => {
                     <li><Link to="/tech-solutions" className="text-gray-700 hover:text-blue-500">Tech Solutions</Link></li>
                     <li><Link to="/case-studies" className="text-gray-700 hover:text-blue-500">Case Studies</Link></li>
                     <li><Link to="/about" className="text-gray-700 hover:text-blue-500">About Us</Link></li>
+                    <li><Link to="/sign-documents" className="text-gray-700 hover:text-blue-500">Sign</Link></li>
                 </ul>
 
                 {/* Desktop Button */}
@@ -52,6 +53,7 @@ const Navbar = () => {
                     <Link to="/tech-solutions" className="block text-gray-700 hover:text-blue-500" onClick={toggleMenu}>Tech Solutions</Link>
                     <Link to="/case-studies" className="block text-gray-700 hover:text-blue-500" onClick={toggleMenu}>Case Studies</Link>
                     <Link to="/about" className="block text-gray-700 hover:text-blue-500" onClick={toggleMenu}>About Us</Link>
+                    <Link to="/sign-documents" className="text-gray-700 hover:text-blue-500">Client Sign</Link>
                     <button className="w-full mt-4 h-[44px] rounded-[4px] px-4 bg-[#004B37] text-white flex items-center justify-center gap-[4px] cursor-pointer">
                         GET AN ESTIMATE
                     </button>
