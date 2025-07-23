@@ -36,7 +36,7 @@ export default function AdminSignDocumentPage() {
 
   // Fetch the client-signed PDF
   useEffect(() => {
-    fetch(`http://localhost:5000/api/signed-pdfs/${id}`)
+    fetch(`https://eqtylyfe-be.onrender.com/api/signed-pdfs/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch PDF");
         return res.json();
@@ -172,7 +172,7 @@ export default function AdminSignDocumentPage() {
       const formData = new FormData();
       formData.append("file", blob, `co-signed-document-${id}.pdf`);
       const response = await fetch(
-        `http://localhost:5000/api/upload-admin-signed-pdf/${id}`,
+        `https://eqtylyfe-be.onrender.com/api/upload-admin-signed-pdf/${id}`,
         {
           method: "POST",
           body: formData,
