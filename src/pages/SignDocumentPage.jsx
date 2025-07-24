@@ -5,9 +5,10 @@ import html2canvas from "html2canvas";
 import { useDocuments } from "../DocumentsContext";
 import { Document, Page, pdfjs } from 'react-pdf';
 import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.min.js?url';
+import { PDFDocument, rgb } from 'pdf-lib';
+
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
-
 
 
 
@@ -174,8 +175,16 @@ export default function SignDocumentPage() {
         x: pdfX,
         y: pdfY,
         width: box.width * scaleX,
-        height: box.height * scaleY,
+        height: box.height * scaleY,  
       });
+
+      firstPage.drawText(`Signed on: ${new Date().toLocaleString()}`, {
+        x: pdfX,
+        y: pdfY - 15, // 15 points below the signature
+        size: 10,
+        color: rgb(0, 0, 0), // black text
+      });
+
 
       const pdfBytes = await pdfDoc.save();
       const blob = new Blob([pdfBytes], { type: "application/pdf" });
